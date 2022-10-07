@@ -1,6 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 main {
-  max-width: 70ch;
-  padding: 3em 1em;
+  min-width: 100vw;
+  min-height: 100vh;
+  max-width: 100vw;
   margin: auto;
   line-height: 1.75;
 }
