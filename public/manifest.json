@@ -1,6 +1,8 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "sFUEL Station",
+  "name": "sFUEL Station",
+  "description": "sFUEL Station for the #SKALEVERSE",
+  "iconPath": "myl_logo.png",
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,12 +10,12 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "myl_logo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "myl_logo.png",
       "type": "image/png",
       "sizes": "512x512"
     }
