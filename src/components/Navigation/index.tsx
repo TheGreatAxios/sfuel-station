@@ -1,3 +1,4 @@
+import {ConnectButton} from '@rainbow-me/rainbowkit';
 import ThemeToggle from '../ThemeToggle';
 import * as Component from './styles';
 
@@ -7,7 +8,12 @@ const Navigation = () => {
       <Component.Title>
         sFUEL Station
       </Component.Title>
-      <ThemeToggle />
+      <Component.Row>
+        <ThemeToggle />
+        <span style={{ width: '10px' }} />
+        <ConnectButton />
+        <span style={{ width: '10px' }} />
+      </Component.Row>
     </Component.Container>
   );
 }
