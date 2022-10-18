@@ -1,8 +1,9 @@
-import {ConnectButton} from '@rainbow-me/rainbowkit';
+import { ConnectButton } from '@rainbow-me/rainbowkit';
 import ThemeToggle from '../ThemeToggle';
 import * as Component from './styles';
 
 const Navigation = () => {
+  
   return (
     <Component.Container>
       <Component.Title>
@@ -12,8 +13,8 @@ const Navigation = () => {
         <ThemeToggle />
         <span style={{ width: '10px' }} />
         <ConnectButton />
-        <span style={{ width: '10px' }} />
-      </Component.Row>
+        <span style={{ width: '10px' }} /> 
+        </Component.Row>
     </Component.Container>
   );
 }

@@ -2,20 +2,20 @@
   "short_name": "sFUEL Station",
   "name": "sFUEL Station",
   "description": "sFUEL Station for the #SKALEVERSE",
-  "iconPath": "myl_logo.png",
+  "iconPath": "sfuel.png",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "sfuel.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     },
     {
-      "src": "myl_logo.png",
+      "src": "sfuel.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "myl_logo.png",
+      "src": "sfuel.png",
       "type": "image/png",
       "sizes": "512x512"
     }

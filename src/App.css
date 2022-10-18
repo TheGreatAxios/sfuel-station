@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300&family=Spline+Sans+Mono:wght@700&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -5,21 +6,22 @@
 
 :root,
 :root.light {
-  --primary-color: #8758FF;
-  --secondary-color: #5CB8E4;
+  --primary-color: #AF8A4B;
   --background-color: #F2F2F2;
+  --secondary-color: #5CB8E4;
   --accent-color: #181818;
   --text-color: #181818;
 }
 
 [data-theme="dark"] {
+  --primary-color: #c8ad7f;
   --text-color: #F2F2F2;
   --accent-color: #F2F2F2;
   --background-color: #181818;
 }
 
 body {
-  font-family: 'Poppins', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: 'Laila', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--background-color);
   height: 100%;
   width: 100%;

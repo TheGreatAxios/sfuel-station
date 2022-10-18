@@ -1,10 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Pages from './pages';
 import Components from './components';
 import { chain, configureChains, createClient, WagmiConfig } from 'wagmi';
 import { darkTheme, getDefaultWallets, RainbowKitProvider } from '@rainbow-me/rainbowkit';
 import { publicProvider } from 'wagmi/providers/public';
+import Station from './Station';
+import ThemeProvider from './components/ThemeProvider/index'
 
 const { chains, provider } = configureChains(
     [chain.mainnet],
@@ -39,14 +40,9 @@ function App() {
         })}
       >
             <main>
-                <Router>
-                    <Components.Navigation />
-                    <Routes>
-                         <Route path='/' element={ <Pages.LandingPage />} />
-                        <Route path='/station' element={ <Pages.StationPage isDeveloper={false} /> } />
-                        <Route path='/developers' element={ <Pages.StationPage isDeveloper={true} /> } />
-                    </Routes>
-                </Router>
+                <Components.Navigation />
+                    <Station />
+                <Components.Footer/>
             </main>
         </RainbowKitProvider>
     </WagmiConfig>
