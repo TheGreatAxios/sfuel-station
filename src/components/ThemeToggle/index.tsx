@@ -3,26 +3,26 @@
  * @copyright 2022. Sawyer Cutler
 */
 
-import { useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 import { LightMode, DarkMode } from '@styled-icons/material'
 import * as Components from './styles';
+import { ThemeContext } from '../../context/ThemeContext';
 
 const ThemeToggle = () => {
 
-  const [theme, setTheme] = useState<string>('light');
+  const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
 
   const toggle = () => {
     if (document.body.hasAttribute("data-theme")) {
       document.body.removeAttribute("data-theme");
-      setTheme("light");
     } else {
       document.body.setAttribute("data-theme", "dark");
-      setTheme("dark");
     }
+    toggleTheme();
   }
 
   useEffect(() => {
-    if (theme === "dark") {
+    if (isDarkTheme) {
       document.body.setAttribute("data-theme", "dark");
     } else {
       document.body.removeAttribute("data-theme");
@@ -35,7 +35,7 @@ const ThemeToggle = () => {
         e.preventDefault();
         toggle();
       }}>
-        {theme === "dark" ? <LightMode size="36" /> : <DarkMode size="36" />}
+        {isDarkTheme ? <DarkMode size="36" /> : <LightMode size="36" />}
       </Components.IconContainer>
     </Components.Container>
   );
